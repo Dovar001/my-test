@@ -1,0 +1,1 @@
+export {TestVariant} from './test-variant'

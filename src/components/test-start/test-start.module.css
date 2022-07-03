@@ -1,0 +1,21 @@
+.start{
+    height: 423px;
+    background-color: rgb(211, 233, 250);
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.text{
+ padding: 2rem;
+background-color: #fff;
+text-align: justify;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.text button{
+    width: 50%;
+    margin-top: 1rem;
+}
