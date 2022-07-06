@@ -1,7 +1,10 @@
 import { Button } from '@mui/material';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import { visitorTestQuestions,visitorTestBaseInfo } from '../../tests.fake.data';
+import {
+  visitorTestQuestions,
+  visitorTestBaseInfo,
+} from '../../tests.fake.data';
 import styles from './test-control.module.css';
 
 interface TestControlProps {
@@ -34,14 +37,27 @@ const TestControl: FC<TestControlProps> = ({
 
   return (
     <div className={styles.control}>
-      <Button size='large' variant='contained' onClick={prevQuestion}>
+      <Button
+        style={{ visibility: currentQuestion > 1 ? 'visible' : 'hidden' }}
+        size='large'
+        variant='contained'
+        onClick={prevQuestion}
+      >
         Previous
       </Button>
+
       <div className={styles.count}>{`${currentQuestion} / ${all}`}</div>
 
       {currentQuestion === all ? (
-        <Button size='large' variant='contained' onClick={() => onFinish()}>
-          <Link style={{textDecoration:'none',color:'#fff'}} to={`api/testing/${visitorTestBaseInfo?.id}/testing`} >Finish</Link>
+        <Button
+          component={Link}
+          to={`api/testing/${visitorTestBaseInfo?.id}/testing`}
+          size='large'
+          variant='contained'
+          onClick={() => onFinish()}
+          style={{ width: '100px' }}
+        >
+          Finish
         </Button>
       ) : (
         <Button size='large' variant='contained' onClick={nextQuestion}>
