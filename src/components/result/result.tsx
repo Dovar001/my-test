@@ -1,13 +1,14 @@
 import { Button } from '@mui/material';
 import { FC } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { finishBody, visitorTestQuestions } from '../../tests.fake.data';
+import { visitorTestQuestions } from '../../tests.fake.data';
+import { ResultContent } from '../result-content';
 
 const Result: FC = () => {
   const params = useParams();
 
   const startNew = () => {
-    visitorTestQuestions.map((item:any) => {
+    visitorTestQuestions.map((item: any) => {
       return (item.answerIds = []);
     });
   };
@@ -15,12 +16,10 @@ const Result: FC = () => {
   return (
     <div>
       <div>
-        {' '}
-        <b>This is result of user with id</b> :{params?.id}
+        {visitorTestQuestions?.map((value: any, index: any) => {
+          return <ResultContent currentQuestion={index + 1} />;
+        })}
       </div>
-      <hr />
-      <div>{JSON.stringify(finishBody)}</div>
-      <hr />
       <Button variant='contained' onClick={() => startNew()}>
         <Link style={{ textDecoration: 'none', color: '#fff' }} to='/'>
           Start new test

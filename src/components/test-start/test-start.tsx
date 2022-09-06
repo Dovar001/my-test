@@ -12,8 +12,8 @@ const StartTest: FC<StartTestProps> = ({ setStartTest, startTest }) => {
     <div className={styles.start}>
       <div className={styles.text}>
         <Typography variant='h6'>
-          If you are not sure about your level,don't worry,you can take this
-          test.There are 20 questions and there is no time limit. You will be
+          If you want to know your english level, you have to pass take this test. 
+          There are 20 questions and there is no time limit. You will be
           able to see the answers when you finish the test.
         </Typography>
         <Button

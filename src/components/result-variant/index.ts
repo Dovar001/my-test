@@ -1,0 +1,1 @@
+export {ResultVariant} from './result-variant'

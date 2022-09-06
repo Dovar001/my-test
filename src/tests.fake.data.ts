@@ -19,6 +19,7 @@ const visitorTestQuestions: any = [
   {
     id: 'fadsfasdfasd',
     answerIds: [],
+    rightAnswerId:'gfdgfdagfdgfgg',
     question: {
       title: '________ name is Robert.',
       variants: [
@@ -40,6 +41,7 @@ const visitorTestQuestions: any = [
   {
     id: 'gfdsgfdg444',
     answerIds: [],
+    rightAnswerId:'gfdshg',
     question: {
       title: '________ are you from?',
       variants: [
@@ -61,6 +63,7 @@ const visitorTestQuestions: any = [
   {
     id: 'gfasdfasdf4',
     answerIds: [],
+    rightAnswerId:'fdsafsadf',
     question: {
       title: '________ he play tennis?',
       variants: [

@@ -1,4 +1,4 @@
-import { FC} from 'react';
+import { FC } from 'react';
 import styles from './test-variant.module.css';
 import { visitorTestQuestions } from '../../tests.fake.data';
 import { FiCheck } from 'react-icons/fi';
@@ -61,10 +61,8 @@ const TestVariant: FC<TestVariantsProps> = ({
         )}
       </div>
       <div className={styles.test}>
-        <Typography>
-        {test}
-        </Typography>
-        </div>
+        <Typography>{test}</Typography>
+      </div>
     </div>
   );
 };
