@@ -1,5 +1,5 @@
-.app{
-    background-color: aliceblue;
-    height: 100%;   
-    padding: 3rem 10rem;
+.app {
+  background-color: aliceblue;
+  min-height: 86.7vh;
+  padding: 3rem 10rem;
 }

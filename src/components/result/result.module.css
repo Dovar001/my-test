@@ -1,0 +1,7 @@
+.number {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(59, 120, 233);
+  display: inline-block;
+  margin: 0 10px;
+}
